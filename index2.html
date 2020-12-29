@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>olde 2 vue</title>
+	<style>
+		body{
+			font-family:tahoma,sans-serif;
+			margin:0;
+			font-variant:small-caps;
+
+			display: flex;
+			flex-direction:row-reverse;
+		}
+		section, aside{
+			margin:1rem;
+		}
+		aside {
+			width: 20rem;
+		}
+		a {
+			display: list-item;
+			list-style: decimal inside;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<aside>
+			portfolio
+			<nav>
+				<olde-link
+					v-for="key, val in portfolio"
+					:href="key"
+					:link="val"
+				></olde-link>
+			</nav>
+			<br>
+			to hire me for website work<br>
+			contact
+			<nav>
+				<olde-link
+					v-for="key, val in contact"
+					:href="key"
+					:link="val"
+				></olde-link>
+			</nav>
+			<br>
+			to get an idea of who i am<br>
+			stalk me on social media
+			<nav>
+				<olde-link
+					v-for="key, val in socialmedia"
+					:href="key"
+					:link="val"
+				></olde-link>
+			</nav>
+		</aside>
+	</div>
+	<script src='index.js'></script>
+</body>
+</html>

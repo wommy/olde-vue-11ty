@@ -1,0 +1,16 @@
+{
+  "name": "11ty-vue-olde",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-vue": "^0.2.1",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "dependencies": {}
+}
